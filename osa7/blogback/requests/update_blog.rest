@@ -1,0 +1,10 @@
+PUT http://localhost:3001/api/blogs/62d036d3bc93e0e345c5943e HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "onepiece",
+    "author": "japanese dude",
+    "url": "amazon.com",
+    "likes": 10,
+    "id": "62d036d3bc93e0e345c5943e"
+}
