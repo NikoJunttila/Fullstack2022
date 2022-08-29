@@ -1,36 +1,6 @@
-function Header(props){
-  return(
-      <div>
-         <h1> {props.course} </h1>
-      </div>
-  )
-  }
-
-  function Total(props){
-    return (
-        <div>
-            <p>Number of exercises {props.total}</p>
-        </div>
-    )
-}
-
-const Content = (props) =>{
-  return (
-      <div>
-        <Part part = {props.parts[0]}/>
-        <Part part = {props.parts[1]}/>
-        <Part part = {props.parts[2]}/>
-      </div>
-    )
-}
-
-function Part(props){
-return(
-  <>
-  <p>   {props.part.name} {props.part.exercises} </p>
-  </>
-)  
-}
+import Header from "./components/Header"
+import Total from "./components/Total"
+import Content from "./components/Content"
 
 
 const App = () => {
@@ -51,14 +21,14 @@ const App = () => {
       }
     ]
   }
-
-
+console.log(course.parts)
+ // <Content parts={course.parts} />
 
   return (
     <div>
-     <Header course={course.name} />
-     <Content parts={course.parts} />
-      <Total total={course.parts[0].exercises + course.parts[1].exercises + course.parts[2].exercises} />
+    <Header course={course.name} />
+    <Content content={course.parts} />
+    <Total total={course.parts[0].exercises + course.parts[1].exercises + course.parts[2].exercises} />
      
     </div>
   );

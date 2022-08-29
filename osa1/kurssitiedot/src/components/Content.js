@@ -1,13 +1,17 @@
-
 function Part(props){
-<p>{props.name} {props.exercises}</p>
+    return(
+    <div>
+{props.part.name} {props.part.exercises}
+</div>
+)
 }
 
 function Content(props){
     return(
-<div><p>
-<Part name = {props.name1} exercises={props.exercises1}/>
-</p>
+<div>
+<Part part={props.content[0]} />
+<Part part={props.content[1]} />
+<Part part={props.content[2]} />
 </div>
     )
 }
