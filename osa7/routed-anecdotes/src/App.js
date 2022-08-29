@@ -11,9 +11,9 @@ const Menu = () => {
   }
   return (
     <div>
-      <a href='/' style={padding}>anecdotes</a>
-      <a href='/create' style={padding}>create new</a>
-      <a href='/about' style={padding}>about</a>
+   <Link to="/" ><span style={padding}>anecdotes</span> </Link>
+      <Link to="create"> <span style={padding}>create new</span> </Link>
+      <Link to='/about'><span style={padding}>about</span></Link>
     </div>
   )
 }
