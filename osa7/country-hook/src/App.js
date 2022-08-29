@@ -17,15 +17,6 @@ const useField = (type) => {
 
 const useCountry = (name) => {
   const [country, setCountry] = useState(null)
-  /*
-  const hook = () => {
-    axios
-      .get(`https://restcountries.com/v3.1/name/${name}?fullText=true`)
-      .then(response => {
-        setCountry(response.data)
-      })
-  }
-  useEffect(hook, [name]) */
 useEffect(() =>{
 
   const eventHandler = response => {
